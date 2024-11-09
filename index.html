@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Blog</title>
+
+    <!-- Enlace a la hoja de estilos externa Tema 2. Introducción a hojas de estilo CSS -->
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Importa estilos generales para el blog -->
+
+    <!-- Hoja de estilo propia para el calendario -->
+    <link rel="stylesheet" href="css/estilo_calendario.css"> <!-- Importa estilos específicos para el calendario -->
+</head>
+
+<body>
+    <!-- Cabecera del blog -->
+    <header>
+        <h1>Practica Desarrollo de Aplicaciones en Red</h1>
+        <p>Blog de Practica 1 HTML + CSS</p>
+    </header>
+
+    <!-- Sección de entradas del blog , aquí escribiré los artículos -->
+    <main>
+        <!-- Primera entrada del blog -->
+        <article>
+            <h2><u>Entrada 1: Comenzando con HTML</u></h2>
+            <p>He querido realizar la práctica sin el uso de un Framework...</p>
+            <p>creo que aprenderé más en este punto...</p>
+            <p>Las siguientes entradas hacen referencia al blog y a la estructura del <b>blog.</b></p>
+
+            <!--El CSS aplicará estilos a todas las imágenes en el documento-->
+            <img src="imagenes/logopracticahtml.webp" alt="Imagen Logo Blog"> <!-- Imagen estilizada por el CSS general, redimensionada y con bordes redondeados -->
+        </article>
+
+       <!-- Segunda entrada del blog -->
+
+       <article>
+        <h2><u>Entrada 2: Explorando el mundo de los Tags o Etiquetas HTML</u></h2>
+        <p>La siguiente lista contiene etiquetas HTML. Algunas de ellas son tradicionales ( o más antiguas) <p>
+           otras son etiquetas semánticas introducidas en HTML5, quería hacer incapié en la gran evolución en HTML 5</p>
+        <br>
+        <ul>
+            <li><strong>&lt;html&gt;:</strong> Define el documento como HTML.</li>
+            <li><strong>&lt;head&gt;:</strong> Contiene metadatos y enlaces a recursos, como CSS y scripts.</li>
+            <li><strong>&lt;title&gt;:</strong> Establece el título de la página en el navegador.</li>
+            <li><strong>&lt;body&gt;:</strong> Contiene el contenido visible de la página.</li>
+            <li><strong>&lt;h1&gt; a &lt;h6&gt;:</strong> Definen encabezados, siendo &lt;h1&gt; el más importante y &lt;h6&gt; el menos.</li>
+            <li><strong>&lt;p&gt;:</strong> Representa un párrafo de texto.</li>
+            <li><strong>&lt;a&gt;:</strong> Define un enlace o hipervínculo.</li>
+            <li><strong>&lt;img&gt;:</strong> Inserta una imagen en el documento.</li>
+            <li><strong>&lt;ul&gt;:</strong> Define una lista no ordenada.</li>
+            <li><strong>&lt;ol&gt;:</strong> Define una lista ordenada.</li>
+            <li><strong>&lt;li&gt;:</strong> Representa un elemento de lista dentro de &lt;ul&gt; o &lt;ol&gt;.</li>
+            <li><strong>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;:</strong> Definen una tabla, filas y celdas, respectivamente.</li>
+            <li><strong>&lt;form&gt;:</strong> Crea un formulario para la entrada de datos.</li>
+            <li><strong>&lt;input&gt;:</strong> Campo de entrada de datos en formularios, con varios tipos (texto, email, etc.).</li>
+            <li><strong>&lt;div&gt;:</strong> Define una sección o división en la página para organizar el contenido.</li>
+            <li><strong>&lt;span&gt;:</strong> Contenedor en línea para aplicar estilos específicos a partes de texto.</li>
+            <li><strong>&lt;header&gt;, &lt;nav&gt;, &lt;footer&gt;:</strong> Elementos estructurales en HTML5 para semántica.</li>
+            <li><strong>&lt;section&gt;:</strong> Agrupa contenido relacionado en una página.</li>
+            <li><strong>&lt;article&gt;:</strong> Representa contenido autónomo dentro de una página.</li>
+            <li><strong>&lt;aside&gt;:</strong> Define contenido secundario o complementario.</li>
+            <li><strong>&lt;footer&gt;:</strong> Define el pie de página, generalmente con información adicional o enlaces.</li>
+        </ul>
+    </article>
+
+        <!-- Tercera entrada del blog -->
+        <article>
+            <h2><u>Entrada 3: El presente, HTML5 , etiquetas Semánticas</u></h2>
+            <p>HTML5 es la última versión de HTML...</p>
+            <br>
+            <img src="imagenes/html5.webp" alt="Imagen de una caminata en la montaña">
+            <br>
+            <h1> Ejemplo de la etiqueta Video </h1>
+            <video src="multimedia/tierra.mp4" controls autoplay> <!-- Video con controles y auto play, gracias a HTML5 -->
+                Tu navegador no soporta la reproducción de video.
+            </video>
+            <p>Este es un ejemplo de la etiqueta video mostrando controles de reproducción...</p>
+        </article>
+
+        <!-- Cuarta entrada del blog -->
+        <article>
+            <h2><u>Entrada 4: Ejemplo calendario CSS</u></h2>
+            <p>Este es un ejemplo de cómo podemos tener diferentes hojas de estilo en nuestro blog...</p>
+        </article>
+
+        <!-- Calendario usando el CSS específico "estilo_calendario.css" -->
+        <article class="calendario">
+            <div class="calendario-header">Noviembre 2024</div> <!-- Cabecera del calendario con fondo verde y texto blanco -->
+            <div class="dias-semana">
+                <!-- Fila de días de la semana usando flexbox para distribución uniforme -->
+                <div class="dia-semana">Dom</div>
+                <div class="dia-semana">Lun</div>
+                <div class="dia-semana">Mar</div>
+                <div class="dia-semana">Mié</div>
+                <div class="dia-semana">Jue</div>
+                <div class="dia-semana">Vie</div>
+                <div class="dia-semana">Sáb</div>
+            </div>
+
+            <div class="dias-mes">
+                <!-- Espacios vacíos para ajustar el primer día de la semana (domingo y lunes) -->
+                <div class="dia"></div>
+                <div class="dia"></div>
+            
+                <!-- Días del mes -->
+                <div class="dia">1</div>
+                <div class="dia">2</div>
+                <div class="dia">3</div>
+                <div class="dia">4</div>
+                <div class="dia">5</div>
+                <div class="dia">6</div>
+                <div class="dia">7</div>
+                <div class="dia">8</div>
+                <div class="dia">9</div>
+                <div class="dia">10</div>
+                <div class="dia">11</div>
+                <div class="dia">12</div>
+                <div class="dia">13</div>
+                <div class="dia">14</div>
+                <div class="dia">15</div>
+                <div class="dia">16</div>
+                <div class="dia">17</div>
+                <div class="dia">18</div>
+                <div class="dia">19</div>
+                <div class="dia">20</div>
+                <div class="dia">21</div>
+                <div class="dia">22</div>
+                <div class="dia">23</div>
+                <div class="dia">24</div>
+                <div class="dia">25</div>
+                <div class="dia">26</div>
+                <div class="dia">27</div>
+                <div class="dia">28</div>
+                <div class="dia">29</div>
+                <div class="dia">30</div>
+            </div>
+             
+        </article>
+
+        <article>
+           <h2><u>Entrada 5 img con src</u></h2>
+           <img src="https://avatars0.githubusercontent.com/u/9892522?v=4&s=400" />
+  
+        </article>
+    </main>
+
+    <!-- Pie de página del blog -->
+    <footer>
+        <p>&copy; 2024 Mi Blog. Ejemplo del pié de página.</p> <!-- Pie de página con posición fija al fondo de la pantalla -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/* Estilos propios para el calendario que defino en uno de
+los artículos */
+
+.calendario {
+    margin-top: 20px; /* Añade un margen superior de 20px para separar el calendario del contenido superior */
+    width: 100%; /* Hace que el calendario ocupe el 100% del ancho del contenedor */
+    border: 1px solid #ddd; /* Aplica un borde gris claro alrededor del calendario */
+    border-radius: 5px; /* Redondea las esquinas del borde del calendario */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor del calendario para darle profundidad */
+}
+
+.calendario-header {
+    background-color: #4CAF50; /* Fondo verde para el encabezado del calendario */
+    color: white; /* Texto en blanco para resaltar sobre el fondo verde */
+    text-align: center; /* Centra el texto en el encabezado */
+    padding: 10px; /* Espacio interno de 10px alrededor del texto */
+    font-size: 1.2em; /* Tamaño de fuente ligeramente mayor para el título del encabezado */
+}
+
+.dias-semana {
+    display: flex; /* Usa flexbox para alinear los días de la semana en una fila */
+    background-color: #e4e4e4; /* Fondo gris claro para la fila de días de la semana */
+    padding: 5px 0; /* Añade un espacio vertical de 5px arriba y abajo */
+}
+
+.dia-semana {
+    flex: 1; /* Distribuye cada día de la semana de manera equitativa dentro del contenedor */
+    text-align: center; /* Centra el texto en cada celda */
+    font-weight: bold; /* Aplica negrita para destacar los nombres de los días */
+}
+
+.dias-mes {
+    display: flex; /* Usa flexbox para organizar los días del mes */
+    flex-wrap: wrap; /* Permite que los días pasen a la siguiente línea automáticamente */
+}
+
+.dia {
+    width: 14.28%; /* Ancho del 14.28% para dividir el contenedor en 7 columnas (100%/7) */
+    padding: 10px 0; /* Espacio interno vertical de 10px en cada día */
+    text-align: center; /* Centra el número de cada día */
+    border-bottom: 1px solid #ddd; /* Borde inferior gris claro para separar las filas */
+    border-right: 1px solid #ddd; /* Borde derecho gris claro para separar las columnas */
+}
+
+.dia:nth-child(7n) {
+    border-right: none; /* Elimina el borde derecho en el último día de cada semana (cada 7 elementos) */
+}
