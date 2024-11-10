@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <title>Mi Blog</title>
@@ -11,28 +10,47 @@
 </head>
 
 <body>
-    <!-- Cabecera del blog -->
-    <header>
+    <!-- Cabecera del blog , defino el id para el href del final de la página
+     que me permite volver a este punto sin recargar o hacer scrolling-->
+    <header  id="inicio">
+        <br>
+        <br>
         <h1>Practica Desarrollo de Aplicaciones en Red</h1>
-        <p>Blog de Practica 1 HTML + CSS</p>
     </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Menu de Navegacion-->
+    <nav>
+        <ul>
+            <li><a href="#entrada1">Entrada 1: Comenzando con HTML</a></li>
+            <li><a href="#entrada2">Entrada 2: Explorando el mundo de los Tags o Etiquetas HTML</a></li>
+            <li><a href="#entrada3">Entrada 3: HTML5 y las etiquetas Semánticas</a></li>
+            <li><a href="#entrada4">Entrada 4: Ejemplo de un calendario y CSS</a></li>
+            <li><a href="#entrada5">Entrada 5: Ejemplo etiqueta "img" con "div"</a></li>
+        </ul>
+    </nav>
 
     <!-- Sección de entradas del blog , aquí escribiré los artículos -->
     <main>
         <!-- Primera entrada del blog -->
-        <article>
+        <article id="entrada1">
             <h2><u>Entrada 1: Comenzando con HTML</u></h2>
-            <p>He querido realizar la práctica sin el uso de un Framework...</p>
-            <p>creo que aprenderé más en este punto...</p>
-            <p>Las siguientes entradas hacen referencia al blog y a la estructura del <b>blog.</b></p>
+            <p>Para el desarrollo de esta práctica, he decidido no utilizar ningún framework. La razón es que quiero practicar el uso de etiquetas y estilos CSS desde cero.</p>
+            <p>Las siguientes cinco entradas corresponden al blog, donde he añadido un encabezado, un pie de página y un menú de navegación que permite acceder directamente a los artículos.</p>
+            <p>Al final de cada entrada, he incluido un enlace que permite regresar al inicio del blog de forma rápida.</p>
+            <p>He comentado el código HTML y CSS en la mayor medida posible para facilitar su comprensión.</p>
+             
+            
 
             <!--El CSS aplicará estilos a todas las imágenes en el documento-->
-            <img src="imagenes/logopracticahtml.webp" alt="Imagen Logo Blog"> <!-- Imagen estilizada por el CSS general, redimensionada y con bordes redondeados -->
+            <img src="imagenes/logopracticahtml.webp" alt="Imagen Logo Blog"  title="Ejemplo de etiqueta img con imágenes locales"> <!-- Imagen estilizada por el CSS general, redimensionada y con bordes redondeados -->
         </article>
 
        <!-- Segunda entrada del blog -->
 
-       <article>
+       <article id="entrada2">
         <h2><u>Entrada 2: Explorando el mundo de los Tags o Etiquetas HTML</u></h2>
         <p>La siguiente lista contiene etiquetas HTML. Algunas de ellas son tradicionales ( o más antiguas) <p>
            otras son etiquetas semánticas introducidas en HTML5, quería hacer incapié en la gran evolución en HTML 5</p>
@@ -63,28 +81,46 @@
     </article>
 
         <!-- Tercera entrada del blog -->
-        <article>
-            <h2><u>Entrada 3: El presente, HTML5 , etiquetas Semánticas</u></h2>
-            <p>HTML5 es la última versión de HTML...</p>
-            <br>
-            <img src="imagenes/html5.webp" alt="Imagen de una caminata en la montaña">
-            <br>
-            <h1> Ejemplo de la etiqueta Video </h1>
-            <video src="multimedia/tierra.mp4" controls autoplay> <!-- Video con controles y auto play, gracias a HTML5 -->
-                Tu navegador no soporta la reproducción de video.
-            </video>
-            <p>Este es un ejemplo de la etiqueta video mostrando controles de reproducción...</p>
-        </article>
+        <article id="entrada3">
+            <h2><u>Entrada 3: El presente HTML5 y las etiquetas Semánticas</u></h2>
+            <p>HTML5 es la última versión de HTML</p>
+            <p>el cual establece una serie de nuevos elementos y atributos que reflejan
+               el uso típico de los sitios web modernos.</p>
 
+            <h1>Ejemplo de la etiqueta Video y Audio</h1>
+            <!-- voy a usar una tabla para colocar los elementos de forma contígua-->
+            <table>
+                <tr>
+                    <td>
+                        <!-- Elemento de video con controles y reproducción automática -->
+                        <video src="multimedia/tierra.mp4" controls autoplay width="420" height="640">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                        <p>Este es un ejemplo de la etiqueta video en HTML5 mostrando controles de reproducción dentro de un elemento de una tabla.</p>
+                    </td>
+                    <td>
+                        <!-- Elemento de audio con controles y sin reproducción automática -->
+                        <audio src="multimedia/cancion.mp3" controls>
+                            Tu navegador no soporta la reproducción de audio.
+                        </audio>
+                        <br><br><br><br><br><br><br>
+                        <p>Este es un ejemplo de la etiqueta audio en HTML5 mostrando controles de reproducción dentro de un elemento de una tabla.</p>
+                    </td>
+                </tr>
+            </table>
+        </article>
+        
         <!-- Cuarta entrada del blog -->
-        <article>
+        <article id="entrada4">
             <h2><u>Entrada 4: Ejemplo calendario CSS</u></h2>
-            <p>Este es un ejemplo de cómo podemos tener diferentes hojas de estilo en nuestro blog...</p>
+            <p>En este ejemplo se hace uso de una hoja de estilo específica</p>
+            <p>para el calendario, "estilos_calendario.css"</p>
+            
         </article>
 
         <!-- Calendario usando el CSS específico "estilo_calendario.css" -->
         <article class="calendario">
-            <div class="calendario-header">Noviembre 2024</div> <!-- Cabecera del calendario con fondo verde y texto blanco -->
+            <div class="calendario-header">Calendario Mensual</div> <!-- Cabecera del calendario con fondo verde y texto blanco -->
             <div class="dias-semana">
                 <!-- Fila de días de la semana usando flexbox para distribución uniforme -->
                 <div class="dia-semana">Dom</div>
@@ -136,10 +172,23 @@
              
         </article>
 
-        <article>
-           <h2><u>Entrada 5 img con src</u></h2>
-           <img src="https://avatars0.githubusercontent.com/u/9892522?v=4&s=400" />
-  
+        <article id="entrada5">
+            <h2><u>Entrada 5: Imagenes HTML5 y W3C</u></h2>
+            
+            <!-- Contenedor de imágenes, en este caso sin TABLE  solo css  -->
+            <p> En este caso no utilizamos la etiqueta table, usamos css con
+            <p> la etiqueta div y la clase imagenes-horizontales , las imágenes</p>
+            <p> son obtenidas remotamente a través del protocolo https</p>
+            <div class="imagenes-horizontales">
+                <!-- Imagen original -->
+                <img src="https://avatars0.githubusercontent.com/u/9892522?v=4&s=400" alt="Imagen 1" width="100" height="100" title="Ejemplo de etiqueta img con src remotas"/>
+                <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="Logo HTML5" width="100" height="100" title="Ejemplo de etiqueta img con src remotas"/>
+                <img src="https://www.w3.org/Icons/w3c_home.png" alt="Logo W3C" width="100" height="100" title="Ejemplo de etiqueta img con src remotas"/>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1200px-HTML5_Badge.svg.png" alt="HTML5 Badge" width="100" height="100" title="Ejemplo de etiqueta img con src remotas"/>
+            </div>
+            <br>
+             <!-- Enlace para volver al inicio de la página , este id esta en el header -->
+             <p><a href="#inicio">Volver al inicio</a></p>
         </article>
     </main>
 
