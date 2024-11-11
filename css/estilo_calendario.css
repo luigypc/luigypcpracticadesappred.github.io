@@ -1,6 +1,7 @@
 /* Estilos propios para el calendario que defino en uno de
 los artículos, este no es el estilo general para el blog */
 
+/* Estilos generales para el contenedor del calendario */
 .calendario {
     margin-top: 20px; /* Añade un margen superior de 20px para separar el calendario del contenido superior */
     width: 100%; /* Hace que el calendario ocupe el 100% del ancho del contenedor */
@@ -10,6 +11,7 @@ los artículos, este no es el estilo general para el blog */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor del calendario para darle profundidad */
 }
 
+/* Estilos para el encabezado del calendario */
 .calendario-header {
     background-color: #4CAF50; /* Fondo verde para el encabezado del calendario */
     color: white; /* Texto en blanco para resaltar sobre el fondo verde */
@@ -18,37 +20,42 @@ los artículos, este no es el estilo general para el blog */
     font-size: 1.2em; /* Tamaño de fuente ligeramente mayor para el título del encabezado */
 }
 
+/* Estilos para la fila de los días de la semana (Dom, Lun, Mar, etc.) */
 .dias-semana {
     display: flex; /* Usa flexbox para alinear los días de la semana en una fila */
     background-color: #e4e4e4; /* Fondo gris claro para la fila de días de la semana */
     padding: 5px 0; /* Añade un espacio vertical de 5px arriba y abajo */
 }
 
+/* Estilos individuales para cada día de la semana en el encabezado (Dom, Lun, etc.) */
 .dia-semana {
     flex: 1; /* Distribuye cada día de la semana de manera equitativa dentro del contenedor */
     text-align: center; /* Centra el texto en cada celda */
     font-weight: bold; /* Aplica negrita para destacar los nombres de los días */
 }
 
+/* Estilos para el contenedor de los días del mes */
 .dias-mes {
     display: flex; /* Usa flexbox para organizar los días del mes */
     flex-wrap: wrap; /* Permite que los días pasen a la siguiente línea automáticamente */
 }
 
+/* Estilos para cada día del mes */
 .dia {
     width: 14.28%; /* Ancho del 14.28% para dividir el contenedor en 7 columnas (100%/7) */
     padding: 10px 0; /* Espacio interno vertical de 10px en cada día */
     text-align: center; /* Centra el número de cada día */
-    border-bottom: 1px solid #ddd; /* Borde inferior gris claro para separar las filas */
-    border-right: 1px solid #ddd; /* Borde derecho gris claro para separar las columnas */
-    box-sizing: border-box; /* Incluye el borde dentro del ancho total del elemento */
+    border-bottom: 1px solid #ddd; /* Borde inferior gris claro para separar las filas de días */
+    border-right: 1px solid #ddd; /* Borde derecho gris claro para separar las columnas de días */
+    box-sizing: border-box; /* Incluye el borde dentro del ancho total del elemento, para que el diseño sea consistente */
 }
 
-.dia:nth-child(7n) { 
+/* Estilos específicos para cada séptimo día (último día de la semana) */
+.dia:nth-child(7n) {
     border-right: none; /* Elimina el borde derecho en el último día de cada semana (cada 7 elementos) */
 }
 
-/* Opcional: Estilo para días vacíos */
+/* Estilo opcional para días vacíos (espacios en blanco al inicio del calendario) */
 .dia:empty {
-    background-color: #f9f9f9; /* Color de fondo ligeramente diferente para los días vacíos */
+    background-color: #f9f9f9; /* Color de fondo ligeramente diferente para los días vacíos, que se usan como espacios */
 }
