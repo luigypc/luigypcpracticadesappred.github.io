@@ -128,13 +128,14 @@
             
         </article>
 
-        <!-- Calendario usando el CSS específico "estilo_calendario.css" -->
+        <!-- Calendario fictício usando el CSS específico "estilo_calendario.css" -->
         <!-- las clases utilizadas en este artículo , calendario ,calendario-header,dias-semana,dia-semana,dias-mes y dia
                  están definidas en el fichero css propio para el calendario -->
-       <article class="calendario">
-    <div class="calendario-header">Calendario Mensual</div>
+        
+         <article class="calendario">
+        <div class="calendario-header">Calendario Mensual</div>
     <div class="dias-semana">
-        <!-- Fila de días de la semana usando flexbox para distribución uniforme -->
+        <!-- Fila de días de la semana  -->
         <div class="dia-semana">Dom</div>
         <div class="dia-semana">Lun</div>
         <div class="dia-semana">Mar</div>
@@ -145,8 +146,9 @@
     </div>
 
     <div class="dias-mes">
-        <!-- Si el mes comienza en domingo, no se necesitan espacios vacíos antes del día 1 -->
-        
+        <!-- Pongo un espacio vacío para hacer que el día 1 comience en Lunes -->
+        <div class="dia"></div>
+
         <!-- Días del mes -->
         <div class="dia">1</div>
         <div class="dia">2</div>
@@ -182,6 +184,7 @@
     </div>
 </article>
 
+             
         <!-- Quinta entrada del blog -->
 
         <article id="entrada5">
