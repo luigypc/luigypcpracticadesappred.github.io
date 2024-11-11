@@ -38,20 +38,20 @@
     <!-- Sección de entradas del blog , aquí escribiré los artículos -->
     <main>
         <!-- Primera entrada del blog -->
+        
         <article id="entrada1">
-            
+          
             <h2><u>Entrada 1: Comenzando con HTML</u></h2>
-            <p>Para el desarrollo de esta práctica, he decidido no utilizar ningún Framework. La razón es que quiero practicar el uso de etiquetas y estilos CSS desde cero.</p>
+            <p>Para el desarrollo de esta práctica, he decidido no utilizar ningún Framework. La razón es que quiero aprender el uso de las etiquetas y estilos CSS desde cero.</p>
             <p>Las siguientes cinco entradas corresponden al blog, donde he añadido un encabezado, un pie de página y un menú de navegación que permite acceder directamente a los artículos.</p>
-            <p>Al final del blog, he añadido un enlace que permite regresar rápidamente al inicio y he comentado el código HTML y CSS lo máximo posible para facilitar su comprensión.</p>
+            <p>Al final del cada artículo he añadido un enlace que permite regresar rápidamente al inicio, y he comentado el código HTML y CSS lo máximo posible para facilitar su comprensión.</p>
             <p> Como aporte final , he procurado utilizar la mayor cantidad de etiquetas posibles para abarcar diferentes elementos y funcionalidades</p>   
             <p>por ejemplo: diferentes hojas de estilos, listas,tablas,estilos de texto,imágenes,video,audio,caracteres de escape,etc...</p>
                 
-             
             
-
-            <!--El CSS general aplicará estilos a todas las imágenes en el documento-->
-            <img src="imagenes/logopracticahtml.webp" alt="Imagen Logo Blog"  title="Ejemplo de etiqueta img con imágenes locales"> <!-- Imagen estilizada por el CSS general, redimensionada y con bordes redondeados -->
+            
+            <!-- El CSS general aplica estilos a todas las imágenes en el documento, por tanto no se definen en la etiqueta-->
+            <img src="imagenes/logopracticahtml.webp" alt="Imagen Logo Blog"  title="Ejemplo de etiqueta img con imágenes locales"> 
             <br>
             <p><a href="#inicio">Volver al inicio</a></p>
         </article>
@@ -59,12 +59,13 @@
        <!-- Segunda entrada del blog -->
 
        <article id="entrada2">
+           
         <h2><u>Entrada 2: Explorando el mundo de los Tags o Etiquetas HTML</u></h2>
         <p>La siguiente lista contiene etiquetas HTML. Algunas de ellas son tradicionales ( o más antiguas) <p>
            otras son etiquetas semánticas introducidas en HTML5, quería hacer incapié en la gran evolución en HTML 5</p>
         <br>
         <!-- En cada elemento de la lista li utilizo la etiqueta strong para resaltar en negrita , además utilizo
-          los caracteres de escape para poder escribir los nombres sin que se interpreten como etiquetas HTML -->
+          los caracteres de escape &lt y &gt para poder escribir los nombres sin que se interpreten como etiquetas HTML -->
         <ul>
             <li><strong>&lt;html&gt;:</strong> Define el documento como HTML.</li>
             <li><strong>&lt;head&gt;:</strong> Contiene metadatos y enlaces a recursos, como CSS y scripts.</li>
@@ -136,27 +137,27 @@
             <p>con un espacio uniforme para cada día de la semana.</p>
             
             <!-- Calendario fictício usando el CSS específico "estilo_calendario.css" -->
-        <!-- las clases utilizadas en este artículo parael uso de Flexbox ,calendario ,calendario-header,dias-semana,dia-semana,dias-mes y dia
+        <!-- las clases utilizadas en este artículo son Flexbox ,calendario ,calendario-header,dias-semana,dia-semana,dias-mes y dia
                  están definidas en el fichero css propio para el calendario -->
         
          <article class="calendario">
         <div class="calendario-header">Calendario Mensual</div>
     <div class="dias-semana">
         <!-- Fila de días de la semana  -->
-        <div class="dia-semana">Dom</div>
-        <div class="dia-semana">Lun</div>
-        <div class="dia-semana">Mar</div>
-        <div class="dia-semana">Mié</div>
-        <div class="dia-semana">Jue</div>
-        <div class="dia-semana">Vie</div>
-        <div class="dia-semana">Sáb</div>
+        <div class="dia-semana">Domingo</div>
+        <div class="dia-semana">Lunes</div>
+        <div class="dia-semana">Martes</div>
+        <div class="dia-semana">Miércoles</div>
+        <div class="dia-semana">Jueves</div>
+        <div class="dia-semana">Viernes</div>
+        <div class="dia-semana">Sábado</div>
     </div>
 
     <div class="dias-mes">
         <!-- Pongo un espacio vacío para hacer que el día 1 comience en Lunes -->
         <div class="dia"></div>
 
-        <!-- Días del mes -->
+        <!-- 30 Días del mes -->
         <div class="dia">1</div>
         <div class="dia">2</div>
         <div class="dia">3</div>
@@ -204,7 +205,7 @@
             <p> la etiqueta &ltdiv&gt y la clase imagenes-horizontales , las imágenes</p>
             <p> son obtenidas remotamente a través del protocolo https de otras fuentes con la etiqueta <strong>&ltimg&gt</strong></p>
             <div class="imagenes-horizontales">
-                <!-- Imagen original obtenida con src -->
+                <!-- Imagen original obtenida con src no de directorios locales si no de recursos externos -->
                 <img src="https://avatars0.githubusercontent.com/u/9892522?v=4&s=400" alt="Imagen 1" width="100" height="100" title="Ejemplo de etiqueta img con src remotas"/>
                 <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="Logo HTML5" width="100" height="100" title="Ejemplo de etiqueta img con src remotas"/>
                 <img src="https://www.w3.org/Icons/w3c_home.png" alt="Logo W3C" width="100" height="100" title="Ejemplo de etiqueta img con src remotas"/>
