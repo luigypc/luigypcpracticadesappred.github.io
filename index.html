@@ -129,6 +129,8 @@
         </article>
 
         <!-- Calendario usando el CSS específico "estilo_calendario.css" -->
+        <!-- las clases utilizadas en este artículo , calendario ,calendario-header,dia-semana,dia y dias-mes
+                 estan definidas en el fichero css propio para el calendario -->
         <article class="calendario">
             <div class="calendario-header">Calendario Mensual</div> <!-- Cabecera del calendario con fondo verde y texto blanco -->
             <div class="dias-semana">
@@ -182,15 +184,18 @@
              
         </article>
 
+        <!-- Quinta entrada del blog -->
+
         <article id="entrada5">
             <h2><u>Entrada 5: Imagenes HTML5 y W3C</u></h2>
+        <!-- Contenedor de imágenes, en este caso sin TABLE  solo css, es otra forma de ordenar los elementos 
+             utilizo las clases imagenes-horizontales que he definido en la hoja de estilo general estilos.css  -->
             
-            <!-- Contenedor de imágenes, en este caso sin TABLE  solo css, es otra forma de ordenar los elementos  -->
-            <p> En este caso no utilizamos la etiqueta table, usamos css con
+            <p> En este caso no utilizamos la etiqueta table, sino CSS con
             <p> la etiqueta div y la clase imagenes-horizontales , las imágenes</p>
             <p> son obtenidas remotamente a través del protocolo https de otras fuentes</p>
             <div class="imagenes-horizontales">
-                <!-- Imagen original -->
+                <!-- Imagen original obtenida con src -->
                 <img src="https://avatars0.githubusercontent.com/u/9892522?v=4&s=400" alt="Imagen 1" width="100" height="100" title="Ejemplo de etiqueta img con src remotas"/>
                 <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="Logo HTML5" width="100" height="100" title="Ejemplo de etiqueta img con src remotas"/>
                 <img src="https://www.w3.org/Icons/w3c_home.png" alt="Logo W3C" width="100" height="100" title="Ejemplo de etiqueta img con src remotas"/>
@@ -205,7 +210,7 @@
     <!-- Pie de página del blog -->
     
     <footer>
-        <p>&copy; 2024 Mi Blog. Ejemplo del pié de página.</p> <!-- Pie de página con posición fija al fondo de la pantalla -->
+        <p> Ejemplo del pié de página en un Blog </p> <!-- Pie de página con posición fija al fondo de la pantalla -->
     </footer>
 </body>
 </html>
