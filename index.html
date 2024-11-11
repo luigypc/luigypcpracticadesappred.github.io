@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <!-- Cabecera del blog , defino el id para el href del final de la página
+    <!-- Cabecera del blog , defino el id #inicio para el href del final de la página
      que me permite volver a este punto sin recargar o hacer scrolling-->
     <header  id="inicio">
         <br>
@@ -24,7 +24,7 @@
     <br>
     <!-- Menu de Navegacion-->
     <!-- Las distintas etiquetas de la lista no ordenada hacen referencia a la entrada de 
-    cada artículo,utilizo la etiqueta nav es una seccion de navegacion que contiene los enlaces a los artículos-->
+    cada artículo.Utilizo la etiqueta nav para tener una sección de navegacion que contiene los enlaces a los artículos-->
     <nav>
         <ul> <!-- Lista no ordenada , con li de cada elemento de la lista -->
             <li><a href="#entrada1">Entrada 1: Comenzando con HTML</a></li>
@@ -39,6 +39,7 @@
     <main>
         <!-- Primera entrada del blog -->
         <article id="entrada1">
+            
             <h2><u>Entrada 1: Comenzando con HTML</u></h2>
             <p>Para el desarrollo de esta práctica, he decidido no utilizar ningún framework. La razón es que quiero practicar el uso de etiquetas y estilos CSS desde cero.</p>
             <p>Las siguientes cinco entradas corresponden al blog, donde he añadido un encabezado, un pie de página y un menú de navegación que permite acceder directamente a los artículos.</p>
@@ -47,7 +48,7 @@
              
             
 
-            <!--El CSS aplicará estilos a todas las imágenes en el documento-->
+            <!--El CSS general aplicará estilos a todas las imágenes en el documento-->
             <img src="imagenes/logopracticahtml.webp" alt="Imagen Logo Blog"  title="Ejemplo de etiqueta img con imágenes locales"> <!-- Imagen estilizada por el CSS general, redimensionada y con bordes redondeados -->
         </article>
 
@@ -58,6 +59,8 @@
         <p>La siguiente lista contiene etiquetas HTML. Algunas de ellas son tradicionales ( o más antiguas) <p>
            otras son etiquetas semánticas introducidas en HTML5, quería hacer incapié en la gran evolución en HTML 5</p>
         <br>
+        <!-- En cada elemento de la lista li utilizo la etiqueta strong para resaltar en negrita , además utilizo
+          los caracteres de escape para poder escribir los nombres sin que se interpreten como etiquetas HTML -->
         <ul>
             <li><strong>&lt;html&gt;:</strong> Define el documento como HTML.</li>
             <li><strong>&lt;head&gt;:</strong> Contiene metadatos y enlaces a recursos, como CSS y scripts.</li>
@@ -84,6 +87,7 @@
     </article>
 
         <!-- Tercera entrada del blog -->
+        
         <article id="entrada3">
             <h2><u>Entrada 3: El presente HTML5 y las etiquetas Semánticas</u></h2>
             <p>HTML5 es la última versión de HTML</p>
@@ -97,6 +101,7 @@
                     <td>
                         <!-- Elemento de video con controles y reproducción automática -->
                         <video src="multimedia/tierra.mp4" controls autoplay width="420" height="640">
+                            <!--Este texto solo se muestra si el navegador no soporta la etiqueta video -->
                             Tu navegador no soporta la reproducción de video.
                         </video>
                         <p>Este es un ejemplo de la etiqueta video en HTML5 mostrando controles de reproducción dentro de un elemento de una tabla.</p>
@@ -104,6 +109,7 @@
                     <td>
                         <!-- Elemento de audio con controles y sin reproducción automática -->
                         <audio src="multimedia/cancion.mp3" controls>
+                            <!--Este texto solo se muestra si el navegador no soporta la etiqueta audio -->
                             Tu navegador no soporta la reproducción de audio.
                         </audio>
                         <br><br><br><br><br><br><br>
@@ -114,6 +120,7 @@
         </article>
         
         <!-- Cuarta entrada del blog -->
+        
         <article id="entrada4">
             <h2><u>Entrada 4: Ejemplo calendario CSS</u></h2>
             <p>En este ejemplo se hace uso de una hoja de estilo específica</p>
@@ -178,10 +185,10 @@
         <article id="entrada5">
             <h2><u>Entrada 5: Imagenes HTML5 y W3C</u></h2>
             
-            <!-- Contenedor de imágenes, en este caso sin TABLE  solo css  -->
+            <!-- Contenedor de imágenes, en este caso sin TABLE  solo css, es otra forma de ordenar los elementos  -->
             <p> En este caso no utilizamos la etiqueta table, usamos css con
             <p> la etiqueta div y la clase imagenes-horizontales , las imágenes</p>
-            <p> son obtenidas remotamente a través del protocolo https</p>
+            <p> son obtenidas remotamente a través del protocolo https de otras fuentes</p>
             <div class="imagenes-horizontales">
                 <!-- Imagen original -->
                 <img src="https://avatars0.githubusercontent.com/u/9892522?v=4&s=400" alt="Imagen 1" width="100" height="100" title="Ejemplo de etiqueta img con src remotas"/>
@@ -196,6 +203,7 @@
     </main>
 
     <!-- Pie de página del blog -->
+    
     <footer>
         <p>&copy; 2024 Mi Blog. Ejemplo del pié de página.</p> <!-- Pie de página con posición fija al fondo de la pantalla -->
     </footer>
