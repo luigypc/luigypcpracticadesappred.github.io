@@ -11,7 +11,9 @@ los artículos, este no es el estilo general para el blog */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor del calendario para darle profundidad */
 }
 
-/* Estilos para el encabezado del calendario */
+/* Estilos para el encabezado del calendario, defiendo el color de fondo
+   resaltanto texto y formateando los distintos elementos */
+
 .calendario-header {
     background-color: #4CAF50; /* Fondo verde para el encabezado del calendario */
     color: white; /* Texto en blanco para resaltar sobre el fondo verde */
@@ -50,12 +52,12 @@ los artículos, este no es el estilo general para el blog */
     box-sizing: border-box; /* Incluye el borde dentro del ancho total del elemento, para que el diseño sea consistente */
 }
 
-/* Estilos específicos para cada séptimo día (último día de la semana) */
+/* Estilos específicos para cada séptimo día (último día de la semana)  es decir 7n*/
 .dia:nth-child(7n) {
     border-right: none; /* Elimina el borde derecho en el último día de cada semana (cada 7 elementos) */
 }
 
-/* Estilo opcional para días vacíos (espacios en blanco al inicio del calendario) */
+/* Estilo para el primer Domingo del calendario ya que está vacio y no le aplicaremos el estilo .dia*/
 .dia:empty {
     background-color: #f9f9f9; /* Color de fondo ligeramente diferente para los días vacíos, que se usan como espacios */
 }
